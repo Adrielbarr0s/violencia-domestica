@@ -4,10 +4,8 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterModule],
-  template:
-    `
-    <router-outlet></router-outlet>
-    `
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'violencia-domestica';

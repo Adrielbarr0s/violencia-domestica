@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 .home {
     padding: 60px 20px;
     background-color: #f7f7f7;
@@ -18,50 +14,3 @@
     color: #555;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(32, 126, 202, 0.808);
-    width: 100%;
-    padding: 20px;
-    color: #b700ff;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    font-size: 1.5em;
-    font-family: cursive;
-    color: white;
-}
-
-.logo img{
-    height: 90px;
-    margin-right: 10px;
-    object-fit: contain;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin: 0%;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    font-family: cursive;
-    font-size: 1.2em;
-}
-
-.nav-links a:hover {
-    color: #b700ff;
-}
