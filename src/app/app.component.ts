@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './component/home/home.component';
-import { SobreComponent } from "./component/sobre/sobre.component";
-import { ServicosComponent } from "./component/servicos/servicos.component";
-import { ContatoComponent } from "./component/contato/contato.component";
 import { RouterModule } from '@angular/router';
 
 @Component({
