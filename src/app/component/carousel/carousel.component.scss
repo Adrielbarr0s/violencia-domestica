@@ -1,0 +1,11 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
