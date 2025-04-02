@@ -6,7 +6,8 @@
             <h1>Violência Doméstica</h1>
         </div>
         <nav>
-            <ul class="nav-links">
+            <div class="menu-icon" (click)="toggleMenu()">☰</div>
+            <ul [ngClass]="{'active': isMenuOpen}">
                 <li><a routerLink="/" routerLinkActive="active">Home</a></li>
                 <li><a routerLink="/sobre" routerLinkActive="active">Sobre</a></li>
                 <li><a routerLink="/servicos" routerLinkActive="active">Serviços</a></li>
