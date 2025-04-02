@@ -1,16 +1,33 @@
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
 .home {
-    padding: 60px 20px;
-    background-color: #f7f7f7;
-    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../assets/images/mulher.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin: 0;
 }
 
 .home h1 {
+    padding-top: 120px;
     font-size: 2.5em;
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
 }
 
 .home p {
     font-size: 1.5em;
-    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
 }
 

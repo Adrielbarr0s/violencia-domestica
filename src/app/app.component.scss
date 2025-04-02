@@ -2,26 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    border: none;
 }
 
 .navbar {
+    background-color:  rgb(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(0, 179, 155);
     width: 100%;
     padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -32,7 +25,7 @@ body {
 .logo h1 {
     font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .logo img{
@@ -63,14 +56,16 @@ body {
 }
 
 .footer {
-    background-color: rgb(0, 179, 155);
+    background-color: rgb(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 20px;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
+
 .footer p {
     margin: 0;
     font-size: 1em;
