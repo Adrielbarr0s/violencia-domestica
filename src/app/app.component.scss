@@ -15,6 +15,13 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%); // Esconde a navbar ao rolar para baixo
 }
 
 .logo {
@@ -93,14 +100,14 @@ nav ul li a:hover {
 }
 
 .footer {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.577);
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative; // Alterado de fixed para relative
     width: 100%;
+    z-index: 1000;
+    margin-top: 50px; // Adicionado espaçamento acima do footer
 }
 
 .footer p {
@@ -108,4 +115,11 @@ nav ul li a:hover {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }

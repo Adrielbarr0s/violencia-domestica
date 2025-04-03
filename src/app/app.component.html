@@ -1,6 +1,6 @@
 <!-- Description: Home component HTML file -->
 <section class="app">
-    <header class="navbar">
+    <header class="navbar" [class.hidden]="isNavbarHidden">
         <div class="logo">
             <img src="../../../assets/images/logo.png" alt="Logo">
             <h1>Violência Doméstica</h1>
@@ -15,8 +15,8 @@
             </ul>
         </nav>
     </header>
+    <router-outlet></router-outlet>
     <footer class="footer">
         <p>&copy; 2025 Adriel Barros. Todos os direitos reservados.</p>
     </footer>
-    <router-outlet></router-outlet>
 </section>
