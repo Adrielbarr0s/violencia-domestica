@@ -14,62 +14,72 @@ section {
 }
 
 .sobre {
-    width: 100%;
+    width: 100%;    
     background-color: white;
     text-align: center;
     align-items: center;
 }
 
-.container {
-    padding: 40px;
-    padding-bottom: 90px;
-    max-width: 1200px;
+.titulo {
+    width: 100%;
     background-color: #f7f7f7;
+    padding-top: 40px;
+    max-width: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
+    color: rgba(0, 0, 0, 0.76);
 }
 
 .sobre h1{
-    padding-top: 140px;
-    padding-bottom: 30px;
     font-size: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.76);
+    padding-bottom: 10px;
 }
 
 .sobre h2 {
-    padding: 30px;
-    font-size: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1300px;
+    background-color: #f7f7f7;
+}
+
+.card {
+    z-index: 1; // Garante que os cards fiquem abaixo da navbar
+    max-width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: rgba(0, 0, 0, 0.76);
+    margin: 16px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; // Define a fonte do texto
+    color: rgba(0, 0, 0, 0.76); // Define a cor do texto
+    transition: transform 0.3s ease-in-out; // Adiciona uma transição suave ao transformar o card
+    cursor: pointer; // Define o cursor como "pointer" ao passar o mouse    position: relative; // Necessário para efeitos de sombra ou elementos posicionados    overflow: hidden; // Esconde conteúdo que ultrapassa os limites do card    border: 1px solid #ccc; // Adiciona uma borda cinza clara ao card}
 }
 
-.sobre p {
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    color: #555;
-    text-align: justify;
-    font-weight: 400;
-    margin: 20px 0;
+mat-card-content {
+    font-size: 1em; // Tamanho do texto dentro do card
+    line-height: 1.5; // Altura da linha para melhorar a legibilidade
+    text-align: justify; // Alinha o texto para justificar
+    padding: 10px; // Espaçamento interno para o texto
 }
 
-ul {
-    padding-left: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    color: #555;
-    text-align: justify;
-    font-weight: 400;
-    list-style-type: disc;
-    list-style-position: inside;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 8px;
+mat-card-title {
+    font-size: 1.2em; // Tamanho do título do card
+    font-weight: bold; // Deixa o título em negrito
+    margin-bottom: 10px; // Espaçamento abaixo do título
+    text-align: center; // Centraliza o título
 }
