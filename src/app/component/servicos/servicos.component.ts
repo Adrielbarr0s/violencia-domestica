@@ -10,5 +10,10 @@ standalone: true,
   styleUrls: ['./servicos.component.scss']
 })
 export class ServicosComponent {
-
+  hoveredCard: number | null = null;
+  selectedCard: number | null = null;
+  
+  toggleCard(index: number): void {
+    this.selectedCard = this.selectedCard === index ? null : index;
+  }
 }

@@ -5,7 +5,15 @@
   <div class="card-container">
     <br>
 
-    <mat-card appearance="outlined" class="card">
+    <mat-card 
+    appearance="outlined"
+    class="card"
+    [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
+    [class.selected]="selectedCard === 1"
+    (click)="toggleCard(1)"
+    (mouseenter)="hoveredCard = 1"
+    (mouseleave)="hoveredCard = null"
+    >
         <mat-card-header>
             <mat-card-title>
               Telefone
@@ -19,7 +27,15 @@
         </mat-card-actions>
     </mat-card>
 
-    <mat-card appearance="outlined" class="card">
+    <mat-card
+    appearance="outlined"
+    class="card"
+    [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
+    [class.selected]="selectedCard === 2"
+    (click)="toggleCard(2)"
+    (mouseenter)="hoveredCard = 2"
+    (mouseleave)="hoveredCard = null"
+  >
         <mat-card-header>
             <mat-card-title>Redes Sociais</mat-card-title>
         </mat-card-header>

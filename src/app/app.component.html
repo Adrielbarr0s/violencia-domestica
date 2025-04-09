@@ -8,11 +8,19 @@
         <nav>
             <div class="menu-icon" (click)="toggleMenu()">☰</div>
             <ul [ngClass]="{'active': isMenuOpen}">
-                <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-                <li><a routerLink="/sobre" routerLinkActive="active">Sobre</a></li>
-                <li><a routerLink="/servicos" routerLinkActive="active">Serviços</a></li>
-                <li><a routerLink="/contato" routerLinkActive="active">Contato</a></li>
-            </ul>
+                <li>
+                  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                </li>
+                <li>
+                  <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+                </li>
+                <li>
+                  <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
+                </li>
+                <li>
+                  <a routerLink="/contato" routerLinkActive="active">Contato</a>
+                </li>
+              </ul>              
         </nav>
     </header>
     <router-outlet></router-outlet>

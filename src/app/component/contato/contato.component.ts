@@ -9,5 +9,10 @@ import { MatButtonModule } from '@angular/material/button'; // Importado MatButt
   styleUrl: './contato.component.scss'
 })
 export class ContatoComponent {
-
+  hoveredCard: number | null = null;
+  selectedCard: number | null = null;
+  
+  toggleCard(index: number): void {
+    this.selectedCard = this.selectedCard === index ? null : index;
+  }
 }

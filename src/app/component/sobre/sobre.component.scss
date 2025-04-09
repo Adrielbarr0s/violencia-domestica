@@ -24,7 +24,6 @@ section {
     width: 100%;
     background-color: #f7f7f7;
     padding-top: 40px;
-    max-width: 1300px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.76);
@@ -41,14 +40,12 @@ section {
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1300px;
-    background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
 }
 
 .card {
@@ -68,6 +65,26 @@ section {
     color: rgba(0, 0, 0, 0.76); // Define a cor do texto
     transition: transform 0.3s ease-in-out; // Adiciona uma transição suave ao transformar o card
     cursor: pointer; // Define o cursor como "pointer" ao passar o mouse    position: relative; // Necessário para efeitos de sombra ou elementos posicionados    overflow: hidden; // Esconde conteúdo que ultrapassa os limites do card    border: 1px solid #ccc; // Adiciona uma borda cinza clara ao card}
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardFadeIn 0.6s ease-out forwards; // Animação de fade-in
+    transition: background-color 0.3s ease;
+}
+
+.card.hovering {
+    background-color: #e0e0ff;
+}
+  
+.card.selected {
+    background-color: #e0e0ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+  
+@keyframes cardFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
 
 mat-card-content {
@@ -78,8 +95,10 @@ mat-card-content {
 }
 
 mat-card-title {
-    font-size: 1.2em; // Tamanho do título do card
-    font-weight: bold; // Deixa o título em negrito
-    margin-bottom: 10px; // Espaçamento abaixo do título
-    text-align: center; // Centraliza o título
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
 }

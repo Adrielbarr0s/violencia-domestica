@@ -9,5 +9,10 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './sobre.component.scss'
 })
 export class SobreComponent {
-
+  hoveredCard: number | null = null;
+  selectedCard: number | null = null;
+  
+  toggleCard(index: number): void {
+    this.selectedCard = this.selectedCard === index ? null : index;
+  }
 }

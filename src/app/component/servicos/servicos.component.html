@@ -4,7 +4,15 @@
         <h2>Serviços de apoio</h2>
     </div>
     <div class="card-container">
-        <mat-card appearance="outlined" class="card">
+        
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
+        [class.selected]="selectedCard === 1"
+        (click)="toggleCard(1)"
+        (mouseenter)="hoveredCard = 1"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title>Centro de Referência de Atendimento à Mulher (CRM)</mat-card-title>
             </mat-card-header>
@@ -13,7 +21,14 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
+        [class.selected]="selectedCard === 2"
+        (click)="toggleCard(2)"
+        (mouseenter)="hoveredCard = 2"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title>Na minha cidade não tem CRM, onde procuro ajuda?</mat-card-title>
             </mat-card-header>
@@ -22,7 +37,14 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 3 && selectedCard !== 3"
+        [class.selected]="selectedCard === 3"
+        (click)="toggleCard(3)"
+        (mouseenter)="hoveredCard = 3"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title>Ligue 180</mat-card-title>
             </mat-card-header>
@@ -31,7 +53,14 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 4 && selectedCard !== 4"
+        [class.selected]="selectedCard === 4"
+        (click)="toggleCard(4)"
+        (mouseenter)="hoveredCard = 4"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title>Delegacia Especializada no Atendimento à Mulher (DEAM)</mat-card-title>
             </mat-card-header>
@@ -40,7 +69,14 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 5 && selectedCard !== 5"
+        [class.selected]="selectedCard === 5"
+        (click)="toggleCard(5)"
+        (mouseenter)="hoveredCard = 5"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title>Serviços de Apoio Online</mat-card-title>
             </mat-card-header>
@@ -49,7 +85,14 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 6 && selectedCard !== 6"
+        [class.selected]="selectedCard === 6"
+        (click)="toggleCard(6)"
+        (mouseenter)="hoveredCard = 6"
+        (mouseleave)="hoveredCard = null">
             <mat-card-header>
                 <mat-card-title> Lei Maria da Penha n. 11.340/2006</mat-card-title>
             </mat-card-header>
@@ -58,7 +101,14 @@
             </mat-card-content>
         </mat-card>  
         
-        <mat-card appearance="outlined" class="card">
+        <mat-card
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 7 && selectedCard !== 7"
+        [class.selected]="selectedCard === 7"
+        (click)="toggleCard(7)"
+        (mouseenter)="hoveredCard = 7"
+        (mouseleave)="hoveredCard = null">
             <mat-card-content>
                 <p>Todos esses recursos são muito importantes para quem é vítima da violência de gênero. E quando a mulher revela as agressões que sofre, ela dá um passo importante para quebrar o ciclo. </p>
             </mat-card-content>

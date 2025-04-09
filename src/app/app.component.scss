@@ -56,20 +56,48 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    position: relative;
+    padding-bottom: 4px;
 }
 
-nav ul li a{
+
+nav ul li a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    transition: color 0.3s ease;
     font-size: 1.4em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: violet;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    transform: scaleX(1);
 }
 
 nav ul li a:hover {
     color: violet;
+}
+
+nav ul li a.active {
+    color: violet;
+    font-weight: bold;
 }
 
 .menu-icon{
