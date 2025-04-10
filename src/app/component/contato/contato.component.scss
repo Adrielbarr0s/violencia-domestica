@@ -119,4 +119,6 @@ mat-card {
     color: rgba(0, 0, 0, 0.76); // Define a cor do texto
     transition: transform 0.3s ease-in-out; // Adiciona uma transição suave ao transformar o card
     cursor: pointer; // Define o cursor como "pointer" ao passar o mouse
+    flex: 1 1 250px;
+    max-width: 300px;
 }

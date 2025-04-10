@@ -1,50 +1,75 @@
 <section class="contato">
-  <div class="titulo">
-    <h1>Contatos</h1>
-  </div>
-  <div class="card-container">
-    <br>
-
-    <mat-card 
-    appearance="outlined"
-    class="card"
-    [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
-    [class.selected]="selectedCard === 1"
-    (click)="toggleCard(1)"
-    (mouseenter)="hoveredCard = 1"
-    (mouseleave)="hoveredCard = null"
-    >
+    <div class="titulo">
+      <h1>Contatos</h1>
+    </div>
+    <div class="card-container">
+  
+      <mat-card 
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
+        [class.selected]="selectedCard === 1"
+        (click)="toggleCard(1)"
+        (mouseenter)="hoveredCard = 1"
+        (mouseleave)="hoveredCard = null"
+      >
         <mat-card-header>
-            <mat-card-title>
-              Telefone
-            </mat-card-title>
+          <mat-card-title>Ligue 180</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>texto</p>
+          <p>Central de Atendimento à Mulher – funciona 24h e é gratuito. Atendimento sigiloso.</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button color="primary" routerLink="/contato">Saiba mais</button>
+          <a href="tel:180">
+            <button mat-button color="primary">Ligar agora</button>
+          </a>
         </mat-card-actions>
-    </mat-card>
-
-    <mat-card
-    appearance="outlined"
-    class="card"
-    [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
-    [class.selected]="selectedCard === 2"
-    (click)="toggleCard(2)"
-    (mouseenter)="hoveredCard = 2"
-    (mouseleave)="hoveredCard = null"
-  >
+      </mat-card>
+  
+      <mat-card 
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
+        [class.selected]="selectedCard === 2"
+        (click)="toggleCard(2)"
+        (mouseenter)="hoveredCard = 2"
+        (mouseleave)="hoveredCard = null"
+      >
         <mat-card-header>
-            <mat-card-title>Redes Sociais</mat-card-title>
+          <mat-card-title>Disque 100</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>texto</p>
+          <p>Para denúncias de violações de direitos humanos, inclusive contra crianças, idosos e pessoas com deficiência.</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button color="primary" routerLink="/contato">Saiba mais</button>
+          <a href="tel:100">
+            <button mat-button color="primary">Ligar agora</button>
+          </a>
         </mat-card-actions>
-    </mat-card>        
-</div>
-</section>
+      </mat-card>
+  
+      <mat-card 
+        appearance="outlined"
+        class="card"
+        [class.hovering]="hoveredCard === 3 && selectedCard !== 3"
+        [class.selected]="selectedCard === 3"
+        (click)="toggleCard(3)"
+        (mouseenter)="hoveredCard = 3"
+        (mouseleave)="hoveredCard = null"
+      >
+        <mat-card-header>
+          <mat-card-title>Denúncia Online</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Você pode denunciar de forma anônima e online pela ouvidoria do Ministério dos Direitos Humanos.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a href="https://www.gov.br/mdh/pt-br/ondh" target="_blank">
+            <button mat-button color="primary">Acessar</button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+  
+    </div>
+  </section>
+  
