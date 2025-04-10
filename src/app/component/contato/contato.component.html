@@ -1,75 +1,120 @@
+<!-- Adicione isso no seu index.html se ainda não tiver -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <section class="contato">
-    <div class="titulo">
-      <h1>Contatos</h1>
-    </div>
-    <div class="card-container">
-  
-      <mat-card 
-        appearance="outlined"
-        class="card"
-        [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
-        [class.selected]="selectedCard === 1"
-        (click)="toggleCard(1)"
-        (mouseenter)="hoveredCard = 1"
-        (mouseleave)="hoveredCard = null"
-      >
-        <mat-card-header>
-          <mat-card-title>Ligue 180</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>Central de Atendimento à Mulher – funciona 24h e é gratuito. Atendimento sigiloso.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="tel:180">
-            <button mat-button color="primary">Ligar agora</button>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-  
-      <mat-card 
-        appearance="outlined"
-        class="card"
-        [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
-        [class.selected]="selectedCard === 2"
-        (click)="toggleCard(2)"
-        (mouseenter)="hoveredCard = 2"
-        (mouseleave)="hoveredCard = null"
-      >
-        <mat-card-header>
-          <mat-card-title>Disque 100</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>Para denúncias de violações de direitos humanos, inclusive contra crianças, idosos e pessoas com deficiência.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="tel:100">
-            <button mat-button color="primary">Ligar agora</button>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-  
-      <mat-card 
-        appearance="outlined"
-        class="card"
-        [class.hovering]="hoveredCard === 3 && selectedCard !== 3"
-        [class.selected]="selectedCard === 3"
-        (click)="toggleCard(3)"
-        (mouseenter)="hoveredCard = 3"
-        (mouseleave)="hoveredCard = null"
-      >
-        <mat-card-header>
-          <mat-card-title>Denúncia Online</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>Você pode denunciar de forma anônima e online pela ouvidoria do Ministério dos Direitos Humanos.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://www.gov.br/mdh/pt-br/ondh" target="_blank">
-            <button mat-button color="primary">Acessar</button>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-  
-    </div>
-  </section>
-  
+  <div class="titulo">
+    <h1>Contatos</h1>
+  </div>
+  <div class="card-container">
+
+    <!-- CARD 1 - Ligue 180 -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 1 && selectedCard !== 1"
+      [class.selected]="selectedCard === 1"
+      (click)="toggleCard(1)"
+      (mouseenter)="hoveredCard = 1"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <mat-icon color="warn">call</mat-icon>
+        <mat-card-title>Ligue 180</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Central de Atendimento à Mulher – funciona 24h e é gratuito. Atendimento sigiloso.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="tel:180">
+          <button mat-button color="primary">
+            <mat-icon>call</mat-icon>
+            Ligar agora
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- CARD 2 - Disque 100 -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 2 && selectedCard !== 2"
+      [class.selected]="selectedCard === 2"
+      (click)="toggleCard(2)"
+      (mouseenter)="hoveredCard = 2"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <mat-icon color="accent">report_problem</mat-icon>
+        <mat-card-title>Disque 100</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Para denúncias de violações de direitos humanos, inclusive contra crianças, idosos e pessoas com deficiência.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="tel:100">
+          <button mat-button color="primary">
+            <mat-icon>call</mat-icon>
+            Ligar agora
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- CARD 3 - Denúncia Online -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 3 && selectedCard !== 3"
+      [class.selected]="selectedCard === 3"
+      (click)="toggleCard(3)"
+      (mouseenter)="hoveredCard = 3"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <mat-icon color="primary">language</mat-icon>
+        <mat-card-title>Denúncia Online</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Você pode denunciar de forma anônima e online pela ouvidoria do Ministério dos Direitos Humanos.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://www.gov.br/mdh/pt-br/ondh" target="_blank">
+          <button mat-button color="primary">
+            <mat-icon>open_in_new</mat-icon>
+            Acessar
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- CARD 4 - WhatsApp -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 4 && selectedCard !== 4"
+      [class.selected]="selectedCard === 4"
+      (click)="toggleCard(4)"
+      (mouseenter)="hoveredCard = 4"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <i class="fab fa-whatsapp" style="font-size: 24px; color: #25D366; margin-right: 8px;"></i>
+        <mat-card-title>WhatsApp</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Denuncie pelo WhatsApp (61) 99611-0100. Atendimento rápido e sigiloso.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://wa.me/5561996110100" target="_blank">
+          <button mat-button color="primary">
+            <mat-icon>send</mat-icon>
+            Enviar Mensagem
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+</section>

@@ -75,7 +75,6 @@ section {
     height: 400px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,5 +127,5 @@ mat-card-title {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
