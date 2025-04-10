@@ -100,7 +100,7 @@ section {
     }
 }
 
-mat-card-content p{
+mat-card-content{
     padding-bottom: 30px;
 }
 
@@ -118,10 +118,10 @@ mat-card-content p{
 }
 
 .whatsapp-hover-button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 50px;
-    border-radius: 30px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 50px !important; 
+    border-radius: 30px !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;

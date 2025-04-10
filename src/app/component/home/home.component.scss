@@ -8,11 +8,11 @@
 .home {
     height: 77vh;
     width: 100%;
-    background-image: url('../../../assets/images/mulher.jpg');
+    background-image: url('../../../assets/images/mulher.jpg') !important;
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+    animation: fadeInUp 0.8s ease forwards !important;
 }
 
 @keyframes fadeInUp {
