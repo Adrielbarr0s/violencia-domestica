@@ -5,8 +5,12 @@
     border: none;
 }
 
+html, body {
+    background-color: #4B0082;
+}
+
 .home {
-    height: 77vh;
+    height: 82.3vh;
     width: 100%;
     background-image: url('../../../assets/images/mulher.jpg') !important;
     background-size: cover;

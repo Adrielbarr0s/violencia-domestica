@@ -117,6 +117,12 @@ nav ul li a.active {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
+        padding: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav ul {
@@ -125,12 +131,11 @@ nav ul li a.active {
     align-items: center; /* Alinha os itens no centro */
     justify-content: center;
     position: absolute;
-    top: 100%; /* Alinha abaixo da navbar */
+    top: 60px; /* Alinha abaixo da navbar */
     left: 0;
-    right: 0;
     background-color: #4B0082;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     z-index: 999;
     }
 
@@ -149,6 +154,8 @@ nav ul li a.active {
         width: 100%;
         color: white;
         font-size: 1.3em;
+        padding: 10px;
+        text-align: center;
     }
     
     nav ul li a:hover {
