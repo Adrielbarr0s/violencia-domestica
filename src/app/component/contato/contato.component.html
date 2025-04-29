@@ -1,7 +1,7 @@
 <!-- Adicione isso no seu index.html se ainda não tiver -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<app-navbar />
 <section class="contato">
   <div class="titulo">
     <h1>Contatos</h1>
@@ -122,6 +122,66 @@
             <span class="icon-text">
               <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
               <span>Enviar mensagem</span>
+            </span>
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- CARD 5 - Info -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 5"
+      (click)="toggleCard(5)"
+      (mouseenter)="hoveredCard = 5"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <div class="header-content">
+          <mat-icon color="primary">language</mat-icon>
+          <mat-card-title>Lei Maria da Penha</mat-card-title>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <p>LEI Nº 11.340, DE 7 DE AGOSTO DE 2006</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank">
+          <button mat-button color="primary" class="whatsapp-hover-button">
+            <span class="icon-text">
+              <mat-icon>open_in_new</mat-icon>
+              <span>Saiba mais sobre isso</span>
+            </span>
+          </button>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- CARD 6 - Info -->
+    <mat-card
+      appearance="outlined"
+      class="card"
+      [class.hovering]="hoveredCard === 6"
+      (click)="toggleCard(6)"
+      (mouseenter)="hoveredCard = 6"
+      (mouseleave)="hoveredCard = null"
+    >
+      <mat-card-header>
+        <div class="header-content">
+          <mat-icon color="primary">language</mat-icon>
+          <mat-card-title>Central de Atendimento à Mulher</mat-card-title>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Secretaria Nacional de Enfrentamento à Violência contra Mulheres</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://www.gov.br/mulheres/pt-br/acesso-a-informacao/institucional/secretarias/senev" target="_blank">
+          <button mat-button color="primary" class="whatsapp-hover-button">
+            <span class="icon-text">
+              <mat-icon>open_in_new</mat-icon>
+              <span>Saiba mais sobre isso</span>
             </span>
           </button>
         </a>

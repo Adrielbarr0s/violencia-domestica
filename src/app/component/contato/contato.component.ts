@@ -3,10 +3,11 @@ import { MatCardModule } from '@angular/material/card'; // Importado MatCardModu
 import { MatButtonModule } from '@angular/material/button'; // Importado MatButtonModule
 import { MatIconModule } from '@angular/material/icon'; // Importado MatIconModule
 import {MatDividerModule} from '@angular/material/divider';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-contato',
-  imports: [MatCardModule, MatButtonModule, MatIconModule, MatDividerModule],
+  imports: [MatCardModule, MatButtonModule, MatIconModule, MatDividerModule, NavbarComponent],
   templateUrl: './contato.component.html',
   styleUrl: './contato.component.scss'
 })

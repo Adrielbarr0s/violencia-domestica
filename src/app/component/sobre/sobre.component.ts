@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-sobre',
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule, NavbarComponent],
   templateUrl: './sobre.component.html',
   styleUrl: './sobre.component.scss'
 })

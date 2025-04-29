@@ -12,7 +12,7 @@ section {
     align-items: center;
     width: 100%;
     background-color: #f7f7f7;
-    height: 82.3vh;
+    height: 100%;
 }
 
 .titulo {
@@ -62,7 +62,7 @@ section {
 
 .card {
     z-index: 1; // Garante que os cards fiquem abaixo da navbar
-    max-width: 300px;
+    max-width: 400px;
     height: 300px;
     background-color: white;
     border-radius: 20px;

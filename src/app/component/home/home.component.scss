@@ -5,16 +5,13 @@
     border: none;
 }
 
-html, body {
-    background-color: #4B0082;
-}
-
 .home {
-    height: 82.3vh;
+    height: 79vh;
     width: 100%;
     background-image: url('../../../assets/images/mulher.jpg') !important;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards !important;
 }
@@ -28,10 +25,10 @@ html, body {
 
 .titulo {
     width: auto;
-    height: 200px;
+    height: 220px;
     position: absolute;
     bottom: 0px;
-    left: 40px;
+    left: 60px;
     opacity: 0;
     transform: translateY(10px);
     animation: fadeInUp 3s ease forwards;

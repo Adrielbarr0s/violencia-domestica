@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #4B0082;
+}
+
+.footer {
+    background-color: #4B0082;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; // Alterado de fixed para relative
+    z-index: 1000;
+    margin-top: 50px; // Adicionado espaçamento acima do footer
+    margin-bottom: 0px; // Adicionado espaçamento abaixo do footer
+    bottom: 0; // Adicionado para garantir que o footer fique na parte inferior
+    height: 90px;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

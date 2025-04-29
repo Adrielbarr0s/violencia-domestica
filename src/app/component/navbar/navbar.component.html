@@ -1,0 +1,23 @@
+<header class="navbar" [class.hidden]="isNavbarHidden">
+    <div class="logo">
+        <img src="../../../assets/images/logo.png" alt="Logo">
+        <h1>Violência Doméstica</h1>
+    </div>
+    <nav>
+        <div class="menu-icon" (click)="toggleMenu()">☰</div>
+        <ul [ngClass]="{'active': isMenuOpen}">
+            <li>
+              <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            </li>
+            <li>
+              <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+            </li>
+            <li>
+              <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
+            </li>
+            <li>
+              <a routerLink="/contato" routerLinkActive="active">Contato</a>
+            </li>
+          </ul>              
+    </nav>
+</header>
